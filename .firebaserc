@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "materials-e65cc": {
+      "hosting": {
+        "Materials": [
+          "materials-e65cc"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "materials-e65cc"
+  }
+}

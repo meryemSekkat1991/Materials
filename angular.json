@@ -103,9 +103,31 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Materials:build:production",
+            "firebaseProject": "materials-e65cc",
+            "firebaseHostingSite": "materials-e65cc"
+          }
         }
       }
     }
   },
-  "defaultProject": "Materials"
+  "defaultProject": "Materials",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
